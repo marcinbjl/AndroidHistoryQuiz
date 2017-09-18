@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".question5">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="marianstudio.androidhistoryquiz.MainActivity">
+
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/LogoStyle"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/question_number_bar"
+            style="@style/QuestionNumberBarStyle"
+            android:text="@string/question_5_of_10" />
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/QuestionStyle"
+            android:text="@string/question_5" />
+
+        <LinearLayout
+            android:id="@+id/checkbox_group"
+            style="@style/RadioGroupStyle">
+
+            <CheckBox
+                android:id="@+id/checkbox_one"
+                style="@style/RadioButtonStyle"
+                android:text="@string/q5_a1" />
+
+            <CheckBox
+                android:id="@+id/checkbox_two"
+                style="@style/RadioButtonStyle"
+                android:text="@string/q5_a2" />
+
+            <CheckBox
+                android:id="@+id/checkbox_three"
+                style="@style/RadioButtonStyle"
+                android:text="@string/q5_a3" />
+
+            <CheckBox
+                android:id="@+id/checkbox_four"
+                style="@style/RadioButtonStyle"
+                android:text="@string/q5_a4" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/checkbox_group"
+            android:layout_marginBottom="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="nextQuestion"
+            android:text="@string/next_button" />
+
+    </RelativeLayout>
+</ScrollView>
